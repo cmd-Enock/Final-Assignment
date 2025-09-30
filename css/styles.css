@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Navbar */
+header {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #00ff99;
+}
+.motto {
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+/* Hero background */
+.hero {
+  background: url('https://source.unsplash.com/1600x600/?smartphone,technology') center/cover no-repeat;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+.slides {
+  display: flex;
+  animation: slide 15s infinite;
+}
+.slides img {
+  width: 100%;
+}
+@keyframes slide {
+  0% {transform: translateX(0);}
+  25% {transform: translateX(-100%);}
+  50% {transform: translateX(-200%);}
+  75% {transform: translateX(-300%);}
+  100% {transform: translateX(0);}
+}
+
+/* Phone cards */
+.phones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem;
+}
+.phone-card {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+.phone-card:hover {
+  transform: scale(1.1);
+  background: #333;
+}
+.phone-card img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
